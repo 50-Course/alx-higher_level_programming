@@ -1,10 +1,6 @@
 #!/usr/bin/python3
-
-def add(a=1, b=2):
-    return (a + b)
-
-
-print(add())
-print("******* ANOTHER TEST *******")
-test_add = add(2, 3)
-print(test_add)
+if __name__ == "__main__":
+    from add_0 import add
+    a = 1
+    b = 2
+    print("{} + {} = {}".format(a, b, add(a, b)))

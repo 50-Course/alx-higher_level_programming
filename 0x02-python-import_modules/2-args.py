@@ -1,14 +1,18 @@
 #!/usr/bin/python3
-import argparse
+if __name__ == "__main__":
+    import sys
+    i = len(sys.argv) - 1
 
-parser = argparse.ArgumentParser(description="Prints the number and list of arguments")
-parser.add_argument("String", type=str)
-args = parser.parse_args() 
+    if i == 0:
+        print("{} arguments.".format(i))
+    elif i == 1:
+        print("{} argument:".format(i))
+    else:
+        print("{} arguments:".format(i))
 
-def parse(*args, **argv):
-    if not args and argv:
-        return "0 arguments"
-    print("{}: arguments\n".format(len(argv)))
-    for index, arg in enumerate(argv):
-        print("{}: {}".format(index, arg))
-
+    if i >= 1:
+        i = 0
+        for arg in sys.argv:
+            if i != 0:
+                print("{}: {}".format(i, arg))
+            i += 1
