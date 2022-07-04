@@ -9,5 +9,5 @@ def print_reversed_list_integer(my_list, idx, new_element):
     if idx < 0 or idx > length - 1:
         return None
     my_list[idx] = new_element
-    return reversed(my_list)
+    return (my_list)
 
