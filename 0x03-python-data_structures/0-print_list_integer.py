@@ -2,13 +2,5 @@
 
 def print_list_integer(my_list=[]):
     if isinstance(my_list, list) and my_list is not None:
-        for i in my_list:
-            if isinstance(i, int):
-               print("{} \n".format(i))
-
-if __name__ == "__main__":
-    """
-    Prints the integers of an array seqeuntially,
-    if the array is empty return NOne.
-    """
-    print_list_integer(my_list)
+        for i in range(len(my_list)):
+            print("{:d} \n".format(my_list[i]))
