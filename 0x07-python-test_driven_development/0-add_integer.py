@@ -13,13 +13,13 @@ def add_integer(a: int, b: int=98) -> int:
     Raises:
         TypeError
     """
-    if not isinstance(a, int):
+    if not type(a) is not int and type(a) is not float:
         raise TypeError("a must be an integer")
     
-    if not isinstance(b, int):
+    if not type(b) is not int and type(b) is not float:
         raise TypeError("b must be an integer")
 
-    if type(a) or type(b) == float:
+    if type(a) or type(b) is float:
         a = int(a)
         b = int(b)
 
