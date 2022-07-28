@@ -4,6 +4,7 @@
 Displays the ful name of a user.
 """
 
+
 def say_my_name(first_name, last_name=""):
     """
     Concate and return a full name.
@@ -18,10 +19,9 @@ def say_my_name(first_name, last_name=""):
     Returns:
         result: string
     """
-    if not isinstance(first_name, str)):
-        raises TypeError("first_name must be a string")
-    if not isinstance(last_name, str)):
-        raises TypeError("last_name must be a string")
+    if type(first_name) is not str:
+        raise TypeError("first_name must be a string")
+    if not isinstance(last_name, str):
+        raise TypeError("last_name must be a string")
 
     print("My name is {} {}".format(first_name, last_name))
-
