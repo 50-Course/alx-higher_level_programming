@@ -1,15 +1,21 @@
 #!/usr/bin/python3
 
 """
-Defines a square class.
+Class Square defines a square object with
+a private instance attribute [size]
+
+Args:
+    size: Optional[int]
+
+Atrribute size must be an integer.
 
 Usage:
     Instantiate the module in your script.
 
     ```
-    from 0-square import Square
+    from 2-square import Square
 
-    square = Square()
+    square = Square(5)
     ```
 """
 
@@ -20,7 +26,7 @@ class Square:
     """
 
     def __init__(self, size=0):
-        if type(size) is not int:
+        if type(size) != int:
             raise TypeError("size must be integer")
         if size < 0:
             raise ValueError("size must be >= 0")
