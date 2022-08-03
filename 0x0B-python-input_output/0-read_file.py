@@ -18,11 +18,10 @@ def read_file(file_name: str = ""):
     the result to stdout.
 
     """
-    if file_name is not None:
-        try:
-            with open(file_name, encoding="utf-8") as f:
-                values = f.readlines()
-        except (FileNotFoundError):
-            pass
+    try:
+        with open(file_name, encoding="utf-8") as f:
+            values = f.readlines()
+    except (FileNotFoundError):
+        pass
 
-        print(values)
+    print(values)
