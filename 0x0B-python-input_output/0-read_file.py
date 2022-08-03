@@ -12,7 +12,7 @@ Usage:
 """
 
 
-def read_file(file_name: str =""):
+def read_file(file_name: str = ""):
     """
     Takes a file argument and prints the
     the result to stdout.
@@ -20,9 +20,9 @@ def read_file(file_name: str =""):
     """
     if file_name is not None:
         try:
-            with open(file_name, encoding='utf-8') as f:
+            with open(file_name, encoding="utf-8") as f:
                 values = f.readlines()
         except (FileNotFoundError):
             pass
-        
+
         print(values)
