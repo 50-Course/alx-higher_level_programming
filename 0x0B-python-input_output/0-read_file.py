@@ -1,25 +1,14 @@
 #!/usr/bin/python3
-
 """
-File Reader module.
-
-Usage:
-    ```
-    from 0-read_file import read_file
-    
-    file_in = read_file(file_name="")
-    ```
+file: 0-read_file.py
+functions:
+-> read_file
 """
 
 
-def read_file(file_name=""):
-    """
-    Takes a file argument and prints the
-    the result to stdout.
+def read_file(filename=""):
+    """ reads a text file (UTF8) and prints it to stdout """
 
-    """
-    with open(file_name, encoding="utf-8") as f:
-        values = f.readlines()
-        f.close()
-
-    print(values)
+    with open(filename, 'r', encoding="utf-8") as f:
+        read_data = f.read()
+        print(read_data, end='')
