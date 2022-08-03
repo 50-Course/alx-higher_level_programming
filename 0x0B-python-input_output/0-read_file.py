@@ -12,16 +12,13 @@ Usage:
 """
 
 
-def read_file(file_name: str = ""):
+def read_file(file_name= ""):
     """
     Takes a file argument and prints the
     the result to stdout.
 
     """
-    try:
-        with open(file_name, encoding="utf-8") as f:
-            values = f.readlines()
-    except (FileNotFoundError):
-        pass
+    with open(file_name, encoding="utf-8") as f:
+        values = f.readlines()
 
     print(values)
