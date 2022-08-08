@@ -18,4 +18,5 @@ class Square:
     """
     Returns a python object.
     """
+
     pass
