@@ -1,5 +1,5 @@
 *-main.py
 ./*-main.py
 ../*-main.py
-__pycache__/*
-../_pycache__/*
+__pycache__/
+./../^_pycache__/
