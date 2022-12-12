@@ -1,4 +1,4 @@
 -- List all tables
-USE $(database);
+USE $(!$);
 SHOW TABLES;
 
