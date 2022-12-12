@@ -1,4 +1,4 @@
---List all tables
-USE &2;
+-- List all tables
+USE &1;
 SHOW TABLES;
 
